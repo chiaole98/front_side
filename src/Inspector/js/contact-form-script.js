@@ -17,16 +17,6 @@ function submitForm(){
     var email = $("#email").val();
     var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
-    var phone = $("#phone").val();
-    var apply_crop = $("#apply_crop").val();
-    var inspection_crop = $("#inspection_crop").val();
-    var date = $("#date").val();
-    var crop = $("#crop").val();
-    var crop_location = $("#crop_location").val();
-    var job_type = $("#job_type").val();
-    
-
-
 
 
     $.ajax({
