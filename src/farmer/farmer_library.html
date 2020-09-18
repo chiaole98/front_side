@@ -32,25 +32,22 @@
                 <a class="nav-link" href="#video-area">首頁</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#news">最新消息</a>
+                <a class="nav-link" href="#apply_inspection">申請檢驗</a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="#subscription">訂閱內容</a>
+                <a class="nav-link" href="#upload_data">上傳檢驗資料</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link" href="#favorite">我的收藏</a>
+                <a class="nav-link" href="#create_data">新增資料</a>
               </li>       
               <li class="nav-item">
-                <a class="nav-link" href="#resume_use_store">有機蔬菜使用店家</a>
-              </li>                        
-              <li class="nav-item">
-                <a class="nav-link" href="#historical">我的紀錄</a>
-              </li>            
+                <a class="nav-link" href="#view_pass_data">查看已通過驗證資料</a>
+              </li>                                 
               <li class="nav-item">
                 <a class="nav-link" href="#contact">聯絡我們</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="personal_info.html">我的帳號</a>
+                <a class="nav-link" href="farmer_info.html">我的帳號</a>
               </li> 
               <li class="nav-item">
                 <a class="nav-link" href="resume.html">登出</a>
@@ -86,50 +83,168 @@
     </header>
     <!-- Header Section End --> 
 
-    <section id="news" class="section" data-stellar-background-ratio="0.2">
+    <!-- apply_inspection Section Start -->
+    <section id="apply_inspection" class="section" data-stellar-background-ratio="0.2">
       <div class="card-body">
         <div class="section-header">          
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">最新 <span>消息</span></h2>
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">申請 <span>檢驗</span></h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
         </div>
         <div class="row">
     
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">
-                   <i class="lnr lnr-heart"></i> 
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="你的姓名" required data-error="請輸入你的姓名">
+                  <div class="help-block with-errors"></div>
+                </div>                                 
               </div>
-              <h4>颱風過境，菜價飆升!!</h4>
-              <p>高雄成汪洋，一夜便水鄉澤國!</p>
-            </div>
-          </div>
-            <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">
-                  <i class="lnr lnr-heart"></i> 
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="你的電話" id="phone" class="form-control" required data-error="請輸入你的電話">
+                  <div class="help-block with-errors"></div>
+                </div> 
               </div>
-              <h4>台東焚風再起!</h4>
-              <p>受季風影響，農作物受損，損失上看10億元!</p>
-            </div>
-          </div>
-            <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">        
-                  <i class="lnr lnr-heart"></i> 
+               <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" placeholder="申請作物" id="apply_crop" class="form-control" required data-error="請輸入你的申請作物">
+                  <div class="help-block with-errors"></div>
+                </div>
               </div>
-              <h4>ABC蝗蟲過境!</h4>
-              <p>蝗蟲過境，橘子、柚子等柑橘類水果被吞蝕殆盡!</p>
-            </div>
-          </div>
+              <div class="col-md-12">
+                <div class="form-group"> 
+                  <textarea class="form-control" placeholder="申請項目" rows="11" data-error="請輸入你的申請項目" required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="submit-button text-center">
+                  <button class="btn btn-common" id="submit" type="submit">申請</button>
+                  <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                  <div class="clearfix"></div> 
+                </div>
+              </div>
+            </div>            
+          </form>
             
         </div>
       </div>
     </section>
+    <!-- apply_inspection Section End --> 
 
-    <section id="subscription" class="section">
+    
+    <!-- upload_data Section Start -->
+    <section id="upload_data" class="section" data-stellar-background-ratio="0.2">
       <div class="card-body">
         <div class="section-header">          
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">我的<span>訂閱內容</span></h2>
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">上傳 <span>檢驗資料</span></h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+        </div>
+        <div class="row">
+    
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="你的姓名" required data-error="請輸入你的姓名">
+                  <div class="help-block with-errors"></div>
+                </div>                                 
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="你的電話" id="phone" class="form-control" required data-error="請輸入你的電話">
+                  <div class="help-block with-errors"></div>
+                </div> 
+              </div>
+               <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" placeholder="檢驗作物" id="inspection_crop" class="form-control" required data-error="請輸入你的檢驗作物">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group"> 
+                  <textarea class="form-control" placeholder="檢驗項目" rows="11" data-error="請輸入你的檢驗項目" required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="submit-button text-center">
+                  <button class="btn btn-common" id="submit" type="submit">申請</button>
+                  <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                  <div class="clearfix"></div> 
+                </div>
+              </div>
+            </div>            
+          </form>
+            
+        </div>
+      </div>
+    </section>
+    <!-- upload_data Section End --> 
+      
+    <!-- create_data Section Start -->
+    <section id="create_data" class="section" data-stellar-background-ratio="0.2">
+      <div class="card-body">
+        <div class="section-header">          
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">新增 <span>資料</span></h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+        </div>
+        <div class="row">
+    
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="你的姓名" required data-error="請輸入你的姓名">
+                  <div class="help-block with-errors"></div>
+                </div>                                 
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="日期" id="date" class="form-control" required data-error="請輸入日期">
+                  <div class="help-block with-errors"></div>
+                </div> 
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="作物" id="crop" class="form-control" required data-error="請輸入你的作物">
+                  <div class="help-block with-errors"></div>
+                </div> 
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="作物地點" id="crop_location" class="form-control" required data-error="請輸入你的作物地點">
+                  <div class="help-block with-errors"></div>
+                </div> 
+              </div>
+               <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" placeholder="作業種類" id="job_type" class="form-control" required data-error="請輸入你的作業種類">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group"> 
+                  <textarea class="form-control" placeholder="內容" rows="11" data-error="請輸入你的內容" required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="submit-button text-center">
+                  <button class="btn btn-common" id="submit" type="submit">送出</button>
+                  <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                  <div class="clearfix"></div> 
+                </div>
+              </div>
+            </div>            
+          </form>
+            
+        </div>
+      </div>
+    </section>
+    <!-- create_data Section End -->
+
+    <!-- view_pass_data Section Start -->
+    <section id="view_pass_data" class="section">
+      <div class="card-body">
+        <div class="section-header">          
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">查看已通過 <span>驗證資料</span></h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
         </div>
         <div class="row">
@@ -195,131 +310,8 @@
         </div>
       </div>
     </section>
-      
-      <!-- favorite Section Start -->
-    <section id="favorite" class="section" data-stellar-background-ratio="0.2">
-      <div class="card-body">
-        <div class="section-header">          
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">我的 <span>收藏</span></h2>
-          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-        </div>
-        <div class="row">
+    <!-- view_pass_data Section End -->  
     
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">
-                   <i class="lnr lnr-heart"></i> 
-              </div>
-              <h4>123健康蔬果</h4>
-              <p>產地高雄，主要生產有機的aa,bb,cc.</p>
-            </div>
-          </div>
-            <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">
-                  <i class="lnr lnr-heart"></i> 
-              </div>
-              <h4>台東釋迦</h4>
-              <p>產地台東太麻里，主要生產有機的aa,bb,cc.</p>
-            </div>
-          </div>
-            <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">        
-                  <i class="lnr lnr-heart"></i> 
-              </div>
-              <h4>ABC果園</h4>
-              <p>產地雲林，主要生產橘子、柚子等柑橘類水果</p>
-            </div>
-          </div>
-            
-        </div>
-      </div>
-    </section>
-    <!-- Features Section End -->
-
-    <section id="resume_use_store" class="section" data-stellar-background-ratio="0.2">
-      <div class="card-body">
-        <div class="section-header">          
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">有機蔬菜 <span>使用店家</span></h2>
-          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-        </div>
-        <div class="row">
-    
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">
-                   <i class="lnr lnr-heart"></i> 
-              </div>
-              <h4>麥當勞</h4>
-              <p>使用屏東有機高麗菜</p>
-            </div>
-          </div>
-            <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">
-                  <i class="lnr lnr-heart"></i> 
-              </div>
-              <h4>里吉拿</h4>
-              <p>使用台中有機美生菜</p>
-            </div>
-          </div>
-            <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">        
-                  <i class="lnr lnr-heart"></i> 
-              </div>
-              <h4>小石鍋</h4>
-              <p>使用宜蘭有機番茄</p>
-            </div>
-          </div>
-            
-        </div>
-      </div>
-    </section>
-      
-    <!-- historical Section Start -->
-    <section id="historical" class="section" data-stellar-background-ratio="0.2">
-      <div class="card-body">
-        <div class="section-header">          
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">我的 <span>紀錄</span></h2>
-          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-        </div>
-        <div class="row">
-            
-            
-         <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">
-              </div>
-              <h4>123健康蔬果</h4>
-              <p>產地高雄，主要生產有機的aa,bb,cc.</p>
-            </div>
-          </div>
-            <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">
-              </div>
-              <h4>台東釋迦</h4>
-              <p>產地台東太麻里，主要生產有機的aa,bb,cc.</p>
-            </div>
-          </div>
-            <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">
-              </div>
-              <h4>ABC果園</h4>
-              <p>產地雲林，主要生產橘子、柚子等柑橘類水果</p>
-            </div>
-          </div>
-    
-        </div>
-      </div>
-    </section>
-    <!-- historical Section End -->
-      
-    
-      
     <!-- Contact Section Start -->
     <section id="contact" class="section">
       <div class="card-body">
