@@ -16,11 +16,11 @@ $data=mysql_query("select * from farmer");//從contact資料庫中選擇所有�
 <table width="700" border="1">
   <tr>
     <td>ID</td>
+    <td>帳號</td>
     <td>姓名</td>
     <td>信箱</td>
     <td>密碼</td>
     <td>手機</td>
-    <td>產地</td>
     <td>地址</td>
     <td>介紹</td>
   </tr>
@@ -28,6 +28,8 @@ $data=mysql_query("select * from farmer");//從contact資料庫中選擇所有�
 for($i=1;$i<=mysql_num_rows($data);$i++){
 $rs=mysql_fetch_row($data);
 ?>
+    <div class='app'>
+    <form method='GET' action='http://140.136.156.12:8080/getinfo/all/'>
   <tr>
     <td><?php echo $rs[0]?></td>
     <td><?php echo $rs[1]?></td>
@@ -39,6 +41,8 @@ $rs=mysql_fetch_row($data);
     <td><?php echo $rs[7]?></td>
       
   </tr>
+        </form>
+    </div>
 <?php
 }
 ?>
